@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    max-width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 2px 2px 24px hsl(217, 54%, 9%);
+}
+
+.hover-effect-container {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.hover-image-container {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    width: 100%;
+    height: 99%;
+    display: grid;
+    border-radius: 18px;
+    opacity: 0;
+}
+
+.hover-image-container:hover {
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hover-image {
+    align-self: center;
+    justify-self: center;
+}
+
+.inline-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.time-block, .quantity-block, .owner-block {
+    display: flex;
+    gap: 5px;
+}
+
+.owner-block {
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.owner-block>img {
+    width: 40px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+
+.owner {
+    align-self: center;
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    margin: 15px 0px;
+    font-size: 22px;
+}
+
+.quantity {
+    color: hsl(178, 100%, 50%);
+}
+
+.owner-name {
+    color: hsl(0, 0%, 100%);
+}
+
+.title:hover, .owner-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
